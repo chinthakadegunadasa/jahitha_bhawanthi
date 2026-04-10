@@ -1,0 +1,28 @@
+---
+output:
+  pdf_document:
+    latex_engine: xelatex
+header-includes:
+  - \usepackage{fontspec}
+  - \setmainfont[Script=Sinhala]{FreeSerif}
+  - \usepackage{geometry}
+  - \geometry{paperwidth=176mm, paperheight=250mm, margin=20mm, inner=25mm, outer=20mm}
+  - \usepackage{tikz}
+  - \usetikzlibrary{calc}
+  - \usepackage{xcolor}
+  - \usepackage[document]{ragged2e}
+  - \usepackage{microtype}
+  - \definecolor{covercolor}{HTML}{1A3A3A}
+  - \definecolor{accentcolor}{HTML}{F39C12}
+  - \sloppy 
+  - \hyphenpenalty=10000 
+  - \usepackage{fancyhdr}
+  - \pagestyle{fancy}
+  - \fancyhf{}
+  - \fancyhead[LE,RO]{\thepage}
+  - \fancyhead[RE,LO]{ගිම්හානයේ මට හමු වූ ජහිතා භවන්ති}
+---
+
+```{r setup, include=FALSE}
+options(tinytex.verbose = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
