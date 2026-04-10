@@ -39,7 +39,7 @@ jobs:
         with:
           name: Dhamma-Book
           path: Dhamma_Book.pdf
-1         # .Rmd ගොනුවේ font එක "LKLUG" ලෙස වෙනස් කිරීමට මතක තබා ගන්න.
+          # .Rmd ගොනුවේ font එක "LKLUG" ලෙස වෙනස් කිරීමට මතක තබා ගන්න.
 
       - name: Render PDF
         run: |
