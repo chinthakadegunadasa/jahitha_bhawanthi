@@ -1,41 +1,47 @@
----
+,---
+title: |
+  | \vspace{4cm} \huge \textbf{ගිම්හානයේ මට හමු වූ}
+  | \Huge \textbf{ජහිතා භවන්ති}
+subtitle: |
+  | \vspace{1cm} \large රතන සූත්‍රය ඇසුරින් පංච උපාදානස්කන්ධය පිළිබඳ 
+  | ඉංජිනේරුමය සහ විදර්ශනාත්මක විග්‍රහයක්
+author: |
+  | \vspace{3cm} \Large \textbf{චින්තක දේශප්‍රිය ගුණදාස}
+  | \small (Chief Technology Officer - Cybergate Services Private Limited)
+date: "2026"
+site: bookdown::bookdown_site
+documentclass: book
 output:
-  pdf_document:
+  bookdown::pdf_book:
     latex_engine: xelatex
+    toc: true
+    toc_depth: 2
+    keep_tex: yes
 header-includes:
-  - \usepackage{fontspec}
-  - \setmainfont[Script=Sinhala]{FreeSerif}
-  - \usepackage{geometry}
-  - \geometry{paperwidth=176mm, paperheight=250mm, margin=20mm, inner=25mm, outer=20mm}
-  - \usepackage{tikz}
-  - \usetikzlibrary{calc}
   - \usepackage{xcolor}
-  - \usepackage[document]{ragged2e}
-  - \usepackage{microtype}
-  - \definecolor{covercolor}{HTML}{1A3A3A}
-  - \definecolor{accentcolor}{HTML}{F39C12}
-  - \sloppy 
-  - \hyphenpenalty=10000 
-  - \usepackage{fancyhdr}
-  - \pagestyle{fancy}
-  - \fancyhf{}
-  - \fancyhead[LE,RO]{\thepage}
-  - \fancyhead[RE,LO]{ගිම්හානයේ මට හමු වූ ජහිතා භවන්ති}
+  - \usepackage{fontspec}
+  - \setmainfont{Iskoola Pota} % ඔබගේ OS එකෙහි ඇති සිංහල ෆොන්ට් එක මෙහි සඳහන් කරන්න
+  - \definecolor{darkblue}{HTML}{000033}
+  - \definecolor{techblue}{HTML}{00CCFF}
+  - \pagecolor{darkblue}
+  - \color{white}
+description: "රතන සූත්‍රය සහ පංච උපාදානස්කන්ධය පිළිබඳ ඉංජිනේරුමය විග්‍රහයක්."
 ---
 
-```{r setup, include=FALSE}
-options(tinytex.verbose = TRUE)
-knitr::opts_chunk$set(echo = FALSE)
-main
-begin{titlepage}
-\begin{tikzpicture}[remember picture, overlay]
-\fill[covercolor] (current page.south west) rectangle (current page.north east);
-\node[anchor=center, text=white] at ((current page.center)+(0,6)) {\fontsize{22}{26}\selectfont \textbf{ගිම්හානයේ මට හමු වූ}};
-\node[anchor=center, text=accentcolor] at ((current page.center)+(0,4)) {\fontsize{48}{55}\selectfont \textbf{ජහිතා භවන්ති}};
-\node[anchor=center, text=white] at ((current page.center)+(0,1.5)) {\fontsize{14}{18}\selectfont රතන සූත්‍රයේ ප්‍රායෝගික විදර්ශනාව සහ ස්කන්ධ විග්‍රහය};
-\draw[accentcolor, line width=2pt] ((current page.center)+(-3,0))--((current page.center)+(3,0));
-\node[anchor=south, text=white] at ((current page.south)+(0,4)) {\fontsize{14}{16}\selectfont \textbf{රචනය: චින්තක දේශප්‍රිය ගුණදාස}};
-\end{tikzpicture}
-\end{titlepage}
+# පෙරවදන {-}
+
+\pagecolor{white}
+\color{black}
+
+මෙම කෘතිය ලියැවෙන්නේ වසර 25කට අධික කාලයක් තොරතුරු තාක්ෂණ ක්ෂේත්‍රයේ, විශේෂයෙන්ම Linux පද්ධති ඉංජිනේරු විද්‍යාව සහ ව්‍යවසාය මට්ටමේ දත්ත යටිතල පහසුකම් සමඟ මා ලැබූ අත්දැකීම් පදනම් කරගෙනය. 
+
+බුදු දහමේ එන පංච උපාදානස්කන්ධ විග්‍රහය සහ රතන සූත්‍රයේ ගැඹුරු දහම් කරුණු, නවීන දත්ත සැකසීමේ ක්‍රියාවලියකට (Data Processing) සමාන කර බැලීම මෙහි මූලික අරමුණයි. අප ජීවිතයේ මුහුණ දෙන අටලෝ දහම නමැති ගිම්හානය මැද, සිත නමැති මෙහෙයුම් පද්ධතිය තුළ "ජහිතා භවන්ති" හෙවත් සැබෑ නිදහස අත්දකින්නේ කෙසේද යන්න මෙහිදී තාක්ෂණික උපමා ඇසුරින් සාකච්ඡා කෙරේ.
+
+විද්‍යුත් හා යාන්ත්‍රික පද්ධතිවල පවතින නියතයන් මෙන්ම, සිත තුළ ක්‍රියාත්මක වන ත්‍රිලක්ෂණය නමැති නියතය හඳුනා ගැනීමෙන් ඕනෑම පීඩාකාරී පරිසරයක වුවද අකම්පිතව හිඳීමේ හැකියාව අපට ලැබේ. මෙම විග්‍රහය තාර්කික බුද්ධියෙන් යුතුව දහම විමසන නවීන පරපුරටත්, තාක්ෂණික ක්ෂේත්‍රයේ නියැලී සිටින වෘත්තිකයන්ටත් තම ආධ්‍යාත්මික ගමන සඳහා නව මාවතක් විවර කරනු ඇතැයි මම විශ්වාස කරමි.
+
+\vspace{1.5cm}
+
+**චින්තක දේශප්‍රිය ගුණදාස** Chief Technology Officer (CTO)  
+Cybergate Services Private Limited  
+
 \newpage
-\justifying
