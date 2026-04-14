@@ -14,14 +14,14 @@ documentclass: book
 output:
   bookdown::pdf_book:
     latex_engine: xelatex
-    toc: true
-    toc_depth: 2
+    toc: true 
+    toc_depth: 2 
     keep_tex: yes
 header-includes:
   - \usepackage{xcolor}
   - \usepackage{fontspec}
   - \setmainfont[Script=Sinhala]{Noto Sans Sinhala} # මෙය Ubuntu/Linux වල බහුලව ඇත
-  #- \setmainfont{Iskoola Pota} % ඔබගේ OS එකෙහි ඇති සිංහල ෆොන්ට් එක මෙහි සඳහන් කරන්න
+  
   - \definecolor{darkblue}{HTML}{000033}
   - \definecolor{techblue}{HTML}{00CCFF}
   - \pagecolor{darkblue}
