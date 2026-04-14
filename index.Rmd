@@ -1,4 +1,8 @@
 ---
+header-includes:
+  - \usepackage{fontspec}
+  - \setmainfont[Script=Sinhala]{Noto Sans Sinhala} # මෙය Ubuntu/Linux වල බහුලව ඇත
+
 title: |
   | \vspace{4cm} \huge \textbf{ගිම්හානයේ මට හමු වූ}
   | \Huge \textbf{ජහිතා භවන්ති}
