@@ -1,8 +1,4 @@
 ---
-header-includes:
-  - \usepackage{fontspec}
-  - \setmainfont[Script=Sinhala]{Noto Sans Sinhala} # මෙය Ubuntu/Linux වල බහුලව ඇත
-
 title: |
   | \vspace{4cm} \huge \textbf{ගිම්හානයේ මට හමු වූ}
   | \Huge \textbf{ජහිතා භවන්ති}
@@ -24,6 +20,7 @@ output:
 header-includes:
   - \usepackage{xcolor}
   - \usepackage{fontspec}
+  - \setmainfont[Script=Sinhala]{Noto Sans Sinhala} # මෙය Ubuntu/Linux වල බහුලව ඇත
   #- \setmainfont{Iskoola Pota} % ඔබගේ OS එකෙහි ඇති සිංහල ෆොන්ට් එක මෙහි සඳහන් කරන්න
   - \definecolor{darkblue}{HTML}{000033}
   - \definecolor{techblue}{HTML}{00CCFF}
