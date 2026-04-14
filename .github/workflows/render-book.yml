@@ -34,7 +34,7 @@ jobs:
           Rscript -e 'bookdown::render_book("index.Rmd", "bookdown::gitbook")'
 
       - name: Upload Build Artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Dhamma-Book-Output
           path: _book/
