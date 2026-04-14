@@ -20,7 +20,7 @@ output:
 header-includes:
   - \usepackage{xcolor}
   - \usepackage{fontspec}
-  - \setmainfont{Iskoola Pota} % ඔබගේ OS එකෙහි ඇති සිංහල ෆොන්ට් එක මෙහි සඳහන් කරන්න
+  #- \setmainfont{Iskoola Pota} % ඔබගේ OS එකෙහි ඇති සිංහල ෆොන්ට් එක මෙහි සඳහන් කරන්න
   - \definecolor{darkblue}{HTML}{000033}
   - \definecolor{techblue}{HTML}{00CCFF}
   - \pagecolor{darkblue}
